@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meta Display AI assistant — Super</title>
+  <link rel="canonical" href="https://app.getsupers.com/use-cases/meta-display-ai-assistant/" />
+  <meta property="og:url" content="https://app.getsupers.com/use-cases/meta-display-ai-assistant/" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div class="ambient-grid"></div>
+<div class="paper-noise"></div>
+<div class="page">
+  <nav class="nav">
+    <div class="brand"><img src="https://storage.googleapis.com/cheatlayer/landing/icon-transparent-512.png" alt="Super logo" /></div>
+    <div class="nav-links">
+      <a href="/use-cases/">Use cases</a>
+      <a href="https://app.getsupers.com/general?login=1&open_login=1">Sign in</a>
+    </div>
+    <div class="nav-cta"><a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Try Super</a></div>
+  </nav>
+
+  <header class="hero">
+    <div class="shell hero-inner">
+      <h1>Meta Display AI assistant that actually does the work</h1>
+      <p class="hero-sub">Meta smart glasses and display wearables are great at answers. Super turns them into action. Use voice or glanceable prompts to trigger a personal AI agent that operates real computers, confirms sensitive steps, and reuses a computer-use cache so repeated workflows get faster and cheaper over time.</p>
+      <div class="hero-actions">
+        <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Start with Super</a>
+        <a class="btn btn-white" href="#guide">Read the field guide</a>
+      </div>
+      <div class="media-frame">
+        <video autoplay muted loop playsinline src="https://storage.googleapis.com/cheatlayer/landing/hero-0607-2-3.mp4"></video>
+      </div>
+    </div>
+  </header>
+
+  <section class="chapter">
+    <div class="shell">
+      <h2>Why Meta Display workflows need more than voice answers</h2>
+      <div class="bento">
+        <div class="bento-item"><h3>Glance-first interfaces</h3><p>Smart glasses favor audio and short visual cues. They are ideal for initiating work, but the heavy lifting still happens elsewhere.</p></div>
+        <div class="bento-item"><h3>Real interfaces</h3><p>Ordering, booking, and account tasks still live behind traditional web and desktop UIs that assistants must operate.</p></div>
+        <div class="bento-item"><h3>Durable repetition</h3><p>The same tasks repeat daily. Without a computer-use cache, you pay the same setup cost every time.</p></div>
+        <div class="bento-item"><h3>Super’s angle</h3><p>Super is built to operate computers and reuse past work, not just talk. That matters for wearables.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <article id="guide" class="long-form-guide shell">
+    <p class="byline">By the Super editorial team · Updated July 2026 · Process note: synthesized from recent smart glasses reporting, agent architecture research, and internal operator playbooks.</p>
+
+    <h2>Market context</h2>
+    <p>Meta smart glasses and display-style wearables are moving quickly from novelty to daily utility. Recent reporting shows Meta investing in cheaper hardware and experimenting with subscription-based AI features, while reviewers consistently note that today’s glasses excel at lightweight capture, navigation, and voice queries rather than complex execution. At the same time, broader agent research from Google, Anthropic, and others highlights a shift toward AI systems that can operate full computers, browsers, and apps with user permission. This convergence creates a gap: wearables are excellent controllers, but most assistants stop at answers.</p>
+    <p>Security and reliability concerns grow as agents gain computer access, with warnings that poorly scoped automation can amplify mistakes or expose accounts. For wearable users, this raises the bar even higher. You want an assistant that can take action when asked, but only within clear guardrails, and that learns from repetition instead of redoing brittle steps. This is where Super positions itself differently from voice-first assistants like Siri, conversational tools like ChatGPT, browser-native approaches like Gemini, experimental players like Grok, and niche automation tools such as Folk and Orchids. Super is designed as a personal agent that treats the wearable as the command surface, not the execution environment, and relies on a reusable computer-use cache to make repeated workflows more efficient.</p>
+
+    <h2>How to evaluate and use this workflow</h2>
+
+    <h3>How to connect Meta Display prompts to a real agent</h3>
+    <p>Start by deciding what you expect the glasses to do versus what the agent should do. On Meta smart glasses, the interaction should stay lightweight: a spoken intent, a quick confirmation glance, or an audio summary. Configure Super so that these prompts trigger a background agent session on your computer or browser. This separation keeps the wearable responsive while allowing the agent to handle logins, navigation, and multi-step forms that would be impossible to complete directly on a display.</p>
+
+    <h3>How to scope permissions and confirmations</h3>
+    <p>Before running real tasks, define which actions require explicit confirmation. For example, reading availability or drafting a booking can run autonomously, while submitting payments or changing account details should pause for approval. Super supports this pattern by design: the agent operates the computer, but hands control back to you at defined checkpoints. This is especially important in wearable contexts where accidental triggers are more likely.</p>
+
+    <h3>How to design repeatable tasks that benefit from cache reuse</h3>
+    <p>Identify workflows you perform frequently from your glasses, such as reordering lunch, checking ride ETAs, or pulling the same reports. Structure these tasks consistently so Super can reuse its computer-use cache. Over time, the agent recognizes familiar screens, navigation paths, and form structures, reducing errors and execution time. This is where Super becomes better and cheaper for repeated computer-use workflows without inventing new integrations.</p>
+
+    <h3>How to test reliability in real environments</h3>
+    <p>Run your workflows at different times and conditions: poor network, updated websites, or minor UI changes. Observe where the agent hesitates or asks for clarification. Because Super operates real interfaces rather than brittle APIs, these tests surface practical issues early. Use the feedback to tighten prompts and confirmation rules so your Meta Display interactions stay predictable.</p>
+
+    <h3>How to expand beyond a single use case</h3>
+    <p>Once one workflow works well, layer others onto the same agent. A key advantage of Super over general assistants like ChatGPT or Gemini is that it can share context and cached behavior across tasks. Your glasses become a universal remote for your digital life, while the agent does the execution consistently in the background.</p>
+
+    <h2>Implementation checklist</h2>
+    <ul>
+      <li>Define a short, unambiguous voice command vocabulary for Meta smart glasses so the agent is triggered intentionally and does not confuse similar intents during hands-free use.</li>
+      <li>Map each wearable command to a concrete computer workflow, including the exact sites, apps, and pages the agent should operate, avoiding vague instructions that increase failure rates.</li>
+      <li>Set explicit confirmation points for irreversible actions like purchases or account changes, ensuring the agent pauses and summarizes before proceeding.</li>
+      <li>Reuse identical task structures whenever possible so Super’s computer-use cache can recognize and accelerate repeated workflows instead of relearning them.</li>
+      <li>Test workflows with accessibility modes and responsive layouts enabled, since many sites render differently and can affect computer-use agents.</li>
+      <li>Document fallback behavior for failures, such as notifying you via audio summary on the glasses when manual intervention is required.</li>
+    </ul>
+
+    <h2>Risks and limits</h2>
+    <ul>
+      <li>Wearable-triggered automation increases the risk of accidental actions. Without careful confirmation design, a misheard command could start an unintended workflow.</li>
+      <li>Computer-use agents depend on UI stability. Major redesigns of frequently used sites can temporarily reduce reliability until the agent adapts.</li>
+      <li>Security scope matters. Granting overly broad permissions to any agent, including Super, can expose sensitive accounts if not managed carefully.</li>
+      <li>Latency is still real. While the glasses feel instant, complex computer workflows take time, and users must be comfortable with asynchronous completion.</li>
+    </ul>
+
+    <h2>FAQ</h2>
+    <h3>How is Super different from Siri on smart glasses?</h3>
+    <p>Siri is optimized for voice queries and simple device actions within Apple’s ecosystem. Super is designed to operate real computers and browsers, making it better suited for complex, multi-step workflows initiated from wearables.</p>
+
+    <h3>How does this compare to ChatGPT or Gemini agents?</h3>
+    <p>ChatGPT and Gemini excel at conversation and are evolving toward agents. Super focuses narrowly on durable computer use and a reusable computer-use cache, which pays off for repeated tasks triggered from Meta Displays.</p>
+
+    <h3>Where do Grok, Folk, and Orchids fit?</h3>
+    <p>Grok emphasizes real-time and social context, while Folk and Orchids represent niche or experimental automation tools. They provide useful context in the market, but Super targets personal, repeatable computer workflows.</p>
+
+    <h3>Do Meta smart glasses run Super directly?</h3>
+    <p>No. The glasses act as the command and feedback layer. Super runs as a personal agent on a computer or browser environment, which is more reliable and powerful.</p>
+
+    <h3>Is this safe for purchases or bookings?</h3>
+    <p>It can be, when designed correctly. Super encourages confirmation checkpoints so you approve sensitive actions rather than fully automating them blindly.</p>
+
+    <h3>Who benefits most from this setup?</h3>
+    <p>People who already use smart glasses daily and want them to initiate real work—operators, commuters, and multitaskers who repeat the same digital tasks often.</p>
+
+    <h2>Sources</h2>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE92TTlMYXZrLVlHTGhsbXY0aURXT01naEtJQ0FXV0tXdURkSlZ0WldXelRLMDU0QU80WVJNRWdPNGFKYlZJaktGVkl0aDREcXlaUE13M0o4M0N0bjN0OEV5ckp4cUstV1k3S1dnczAyMmpGa0k?oc=5">WeRSM on Meta AI glasses subscriptions</a></li>
+      <li><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPS0dHYnE0RGRPT2xWVXFDLXFVY25ZOEJNVGd5UDFEVlNxSi1hY2FSN0hfRXlueFlSMjJJV0s2ck53TGgyeS1lQ2tjamI0ODgyQUdCTWlkbTk0VVZ0QkFyRVFqOVZuUnZCMFVHX1BMbnR5QnhKcWwzNGNVd3ZfeFdHYjZ0ZEVwQ1loVzl2UkN4SzdmOVVTTG1RWDlSVG5YOEo0">PCMag smart glasses review</a></li>
+      <li><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/">Google DeepMind on computer use models</a></li>
+      <li><a href="https://www.searchenginejournal.com/google-gemini-can-now-control-your-computer-hackers-are-already-targeting-ai-agents/">Search Engine Journal on agent security</a></li>
+      <li><a href="https://www.anthropic.com/engineering/building-effective-agents">Anthropic on building effective agents</a></li>
+    </ul>
+  </article>
+
+  <section class="chapter shell">
+    <h2>Explore related Super use cases</h2>
+    <ul class="cluster-links">
+      <li><a href="https://app.getsupers.com/use-cases/order-food-with-ai/">Order food with AI</a></li>
+      <li><a href="https://app.getsupers.com/use-cases/book-rides-with-ai/">Book rides with AI</a></li>
+      <li><a href="https://app.getsupers.com/use-cases/text-message-ai-assistant/">Text message AI assistant</a></li>
+      <li><a href="https://app.getsupers.com/use-cases/ai-agent-build-websites/">AI agent to build websites</a></li>
+      <li><a href="https://app.getsupers.com/use-cases/computer-use-cache/">Computer-use cache</a></li>
+    </ul>
+  </section>
+
+  <section class="cta-band">
+    <div class="shell">
+      <h2>Turn Meta Display moments into real action</h2>
+      <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Try Super now</a>
+    </div>
+  </section>
+</div>
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://app.getsupers.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Use cases", "item": "https://app.getsupers.com/use-cases/"},
+    {"@type": "ListItem", "position": 3, "name": "Meta Display AI assistant", "item": "https://app.getsupers.com/use-cases/meta-display-ai-assistant/"}
+  ]
+}</script>
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Use Super as a Meta Display AI assistant",
+  "step": [
+    {"@type": "HowToStep", "text": "Connect Meta Display voice prompts to Super as a background computer-use agent."},
+    {"@type": "HowToStep", "text": "Define permission scopes and confirmation checkpoints for sensitive actions."},
+    {"@type": "HowToStep", "text": "Structure repeatable tasks so the computer-use cache can accelerate them."},
+    {"@type": "HowToStep", "text": "Test workflows across different UI states and network conditions."},
+    {"@type": "HowToStep", "text": "Expand to additional workflows once reliability is proven."}
+  ]
+}</script>
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How is Super different from Siri?", "acceptedAnswer": {"@type": "Answer", "text": "Super focuses on operating real computers rather than answering questions."}},
+    {"@type": "Question", "name": "Does this replace ChatGPT or Gemini?", "acceptedAnswer": {"@type": "Answer", "text": "No. They are complementary; Super emphasizes durable computer workflows."}}
+  ]
+}</script>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
